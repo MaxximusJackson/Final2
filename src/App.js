@@ -18,14 +18,9 @@ const [time_period, setTime_period] = useState("");
 
 
 useEffect(() => {
-  if(localStorage){
-    const stylesLocalStorage = JSON.parse(localStorage.getItem('styles'));
-    if(stylesLocalStorage){
-      saveStyles(stylesLocalStorage);
-    }
-  }else{
+  
     saveStyles(styles);
-  }
+  //}
   
 }, []);
 
